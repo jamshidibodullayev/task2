@@ -1,0 +1,2482 @@
+{
+	"info": {
+		"_postman_id": "096c63e7-3577-4383-97d0-998f3dd13d8c",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18747942"
+	},
+	"item": [
+		{
+			"name": "address",
+			"item": [
+				{
+					"name": "add address",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"street\" : \"Gaz ko`chasi\", \r\n    \"homeNumber\" : \"9\",\r\n    \"flatRoom\" : \"2\", \r\n    \"discription\" : \"Shaharda\",\r\n    \"districtId\" : \"4\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/address",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Address",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"street\" : \"Olimov ko`chasi\", \r\n    \"homeNumber\" : \"151\",\r\n    \"flatRoom\" : \"2\", \r\n    \"discription\" : \"Markazda\",\r\n    \"districtId\" : \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/address/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"address",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete address",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/address/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"address",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id Address ishlamaydi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/address/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"address",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id Address",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/address/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"address",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Address By Distrcit Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/address?districtId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"address"
+							],
+							"query": [
+								{
+									"key": "districtId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "university",
+			"item": [
+				{
+					"name": "Add University",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"PDP UNIVERSITY\",\r\n    \"openYear\" : 2022,\r\n    \"addressId\" : \"1\",\r\n    \"description\" : \"Yaxshi university\",\r\n    \"active\": \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/university",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"university"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add University Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"OAKA UNIVERSITY\",\r\n    \"openYear\" : 2022,\r\n    \"addressId\" : \"1\",\r\n    \"description\" : \"Yaxshi university\",\r\n    \"active\": \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/university/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"university",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EnabledOrDisabled",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"OAKA UNIVERSITY\",\r\n    \"openYear\" : 2022,\r\n    \"addressId\" : \"1\",\r\n    \"description\" : \"Yaxshi university\",\r\n    \"active\": \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/university/1?active=false",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"university",
+								"1"
+							],
+							"query": [
+								{
+									"key": "active",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete University",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"OAKA UNIVERSITY\",\r\n    \"openYear\" : 2022,\r\n    \"addressId\" : \"1\",\r\n    \"description\" : \"Yaxshi university\",\r\n    \"active\": \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/university/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"university",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All University",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"OAKA UNIVERSITY\",\r\n    \"openYear\" : 2022,\r\n    \"addressId\" : \"1\",\r\n    \"description\" : \"Yaxshi university\",\r\n    \"active\": \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/university/?page=0&size=20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"university",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id University Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/university/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"university",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All University Is Active true",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/university/getAllUniversityIsActive/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"university",
+								"getAllUniversityIsActive",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id University Is Active true",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"OAKA UNIVERSITY\",\r\n    \"openYear\" : 2022,\r\n    \"addressId\" : \"1\",\r\n    \"description\" : \"Yaxshi university\",\r\n    \"active\": \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/university/getByIdUniversityIsActive/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"university",
+								"getByIdUniversityIsActive",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All University By Region Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"OAKA UNIVERSITY\",\r\n    \"openYear\" : 2022,\r\n    \"addressId\" : \"1\",\r\n    \"description\" : \"Yaxshi university\",\r\n    \"active\": \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/university/getAllUniversityByRegionId/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"university",
+								"getAllUniversityByRegionId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All University By District Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"OAKA UNIVERSITY\",\r\n    \"openYear\" : 2022,\r\n    \"addressId\" : \"1\",\r\n    \"description\" : \"Yaxshi university\",\r\n    \"active\": \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/university/getAllUniversityByDistrictId/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"university",
+								"getAllUniversityByDistrictId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "region",
+			"item": [
+				{
+					"name": "Add Region",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Toshkent shahri\", \r\n    \"description\" : \"O`zbekiston poytaxti\", \r\n    \"active\" : \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/region",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"region"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Region",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Toshkent shahri\", \r\n    \"description\" : \"O`zbekiston poytaxti\", \r\n    \"active\" : \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/region/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"region",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Region",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/region/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"region",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EnablanOrDisabledRegion",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/region/1?active=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"region",
+								"1"
+							],
+							"query": [
+								{
+									"key": "active",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllRegion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/region?page=0&size=20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"region"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByIdRegion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/region/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"region",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllRegionIsActive",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/region/isActive?page=0&size=20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"region",
+								"isActive"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getByIdRegionIsActive",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/region/isActive/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"region",
+								"isActive",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "district",
+			"item": [
+				{
+					"name": "Add District",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\" : \"Chilonzor\", \r\n\"description\" : \"Chilonzor tumani \",\r\n\"active\" : \"true\",\r\n\"regionId\" : \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/district",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"district"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit District",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\" : \"Chilonzor\", \r\n\"description\" : \"Chilonzor tumani \",\r\n\"active\" : \"true\",\r\n\"regionId\" : \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/district/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"district",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete District",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/district/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"district",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Enabled Or Disabled District",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/district/1?active=false",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"district",
+								"1"
+							],
+							"query": [
+								{
+									"key": "active",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All District",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/district?page=0&size=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"district"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id District",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/district/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"district",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All District Is Active",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/district/getAllDistrictIsActive?page=0&asize=20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"district",
+								"getAllDistrictIsActive"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "asize",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id District Is Active",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/district/getByIdDistrictIsActive/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"district",
+								"getByIdDistrictIsActive",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All District By RegionId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/district/getAllDistrictByRegionId/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"district",
+								"getAllDistrictByRegionId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All District By RegionId Is active",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/district/getAllDistrictByRegionIdIsActive/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"district",
+								"getAllDistrictByRegionIdIsActive",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "faculty",
+			"item": [
+				{
+					"name": "Get All Faculty",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/faculty?page=0&size=20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"faculty"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Faculty",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/faculty/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"faculty",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Faculty By University Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/faculty/getAllFacultyByUniversityId/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"faculty",
+								"getAllFacultyByUniversityId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Faculty Is Active True By UniversityId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/faculty/getAllFacultyIsActiveTrueByUniversityId/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"faculty",
+								"getAllFacultyIsActiveTrueByUniversityId",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Faculty Is Active True",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/faculty/getAllFacultyIsActiveTrue",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"faculty",
+								"getAllFacultyIsActiveTrue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id Faculty Is Active True",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/faculty/getByIdFacultyIsActiveTrue/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"faculty",
+								"getByIdFacultyIsActiveTrue",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id Faculty",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/faculty/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"faculty",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Faculty",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"JAVA\",\r\n    \"active\" : \"true\", \r\n    \"description\" : \"Backend Developer\", \r\n    \"universityId\" : \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/faculty",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"faculty"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Faculty",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"JAVA\",\r\n    \"active\" : \"true\", \r\n    \"description\" : \"Backend Developer\", \r\n    \"universityId\" : \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/faculty/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"faculty",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Faculty",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/faculty/1?active=false",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"faculty",
+								"1"
+							],
+							"query": [
+								{
+									"key": "active",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "group",
+			"item": [
+				{
+					"name": "Get All Group",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/group",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"group"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id Group",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/group/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"group",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id Group Copyis Active True",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/group/getByIdGroupIsActiveTrue/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"group",
+								"getByIdGroupIsActiveTrue",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Group Get By Faculty Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/group/getAllGroupByFacultyId/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"group",
+								"getAllGroupByFacultyId",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Group Is Active True",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/group/getAllGroupIsActiveTrue",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"group",
+								"getAllGroupIsActiveTrue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Group",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"B5\", \r\n    \"active\" : \"true\", \r\n    \"description\" : \"Yaxshi guruh\",\r\n    \"facultyId\" : \"1\",\r\n    \"year\" : 2022\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/group",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"group"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Group",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"B5\", \r\n    \"active\" : \"true\", \r\n    \"description\" : \"Yaxshi guruh\",\r\n    \"facultyId\" : \"1\",\r\n    \"year\" : 2022\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/group/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"group",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Group",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"B5\", \r\n    \"active\" : \"true\", \r\n    \"description\" : \"Yaxshi guruh\",\r\n    \"facultyId\" : \"1\",\r\n    \"year\" : 2022\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/group/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"group",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Enabled or Desabled Group",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"B5\", \r\n    \"active\" : \"true\", \r\n    \"description\" : \"Yaxshi guruh\",\r\n    \"facultyId\" : \"1\",\r\n    \"year\" : 2022\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/group/2?active=false",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"group",
+								"2"
+							],
+							"query": [
+								{
+									"key": "active",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "student",
+			"item": [
+				{
+					"name": "Get All Student",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/student",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id Student",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/student/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"student",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Student By GroupId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/student/getAllStudentByGroupId/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"student",
+								"getAllStudentByGroupId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id Student Is Active True",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/student/getByIdStudentIsActiveTrue/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"student",
+								"getByIdStudentIsActiveTrue",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Student Is Active True",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/student/getAllStudentIsActiveTrue",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"student",
+								"getAllStudentIsActiveTrue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Student",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/student/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"student",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Student Copy",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/student/1?active=false",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"student",
+								"1"
+							],
+							"query": [
+								{
+									"key": "active",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Student",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Jamshid\",\r\n    \"active\" : \"true\",\r\n    \"groupId\" : \"1\",\r\n    \"addressId\" : \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/student",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Student",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Jamshid\",\r\n    \"active\" : \"true\",\r\n    \"groupId\" : \"1\",\r\n    \"addressId\" : \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/student/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"student",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "addition",
+			"item": [
+				{
+					"name": "1 - task",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/addition/StudentSubject/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"addition",
+								"StudentSubject",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2 - task",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/addition/getGroupsAndSumAmountStudent/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"addition",
+								"getGroupsAndSumAmountStudent",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3 - task 1 usul",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/addition/getStudentGroupAndFaculty1?name=salom",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"addition",
+								"getStudentGroupAndFaculty1"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "salom"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3 - task 2 usul",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/addition/getStudentGroupAndFaculty2?text=salom",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"addition",
+								"getStudentGroupAndFaculty2"
+							],
+							"query": [
+								{
+									"key": "text",
+									"value": "salom"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4 - task",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/addition/getStudentNameAverageMark2/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"addition",
+								"getStudentNameAverageMark2",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "subject",
+			"item": [
+				{
+					"name": "Add Subject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Java\",\r\n    \"description\" : \"Backend\",\r\n    \"active\" : \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/subject",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"subject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Subject",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Java\",\r\n    \"description\" : \"Backend\",\r\n    \"active\" : \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/subject/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"subject",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Subject",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Java\",\r\n    \"description\" : \"Backend\",\r\n    \"active\" : \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/subject/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"subject",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Subject Copy",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/subject/1?active=false",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"subject",
+								"1"
+							],
+							"query": [
+								{
+									"key": "active",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Subject",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/subject",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"subject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id Subject",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/subject/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"subject",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Subject Is Active True",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/subject/getAllSubjectIsActiveTrue",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"subject",
+								"getAllSubjectIsActiveTrue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id Subject Is Active True",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/subject/getByIdSubjectIsActiveTrue/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"subject",
+								"getByIdSubjectIsActiveTrue",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "journal",
+			"item": [
+				{
+					"name": "Get All Journal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/journal",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"journal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By IdJournal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/journal/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"journal",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Journal By GroupId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/journal/getByJournalByGroupId/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"journal",
+								"getByJournalByGroupId",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add journal",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"B5 guruh\", \r\n    \"groupId\" : 1, \r\n    \"subjectList\" : [1] \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/journal/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"journal",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Journal",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"B5 guruh\", \r\n    \"groupId\" : 1, \r\n    \"subjectList\" : [1,25] \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/journal/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"journal",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Subject For Journal",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"B5 guruh\", \r\n    \"groupId\" : 1, \r\n    \"subjectList\" : [1,25] \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/journal/journalAddSubject/1?subjectId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"journal",
+								"journalAddSubject",
+								"1"
+							],
+							"query": [
+								{
+									"key": "subjectId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Subject For Journal",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"B5 guruh\", \r\n    \"groupId\" : 1, \r\n    \"subjectList\" : [1,25] \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/journal/journalDeleteSubject/1?subjectId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"journal",
+								"journalDeleteSubject",
+								"1"
+							],
+							"query": [
+								{
+									"key": "subjectId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Journal Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9348/api/v1/journal/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"journal",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "mark",
+			"item": [
+				{
+					"name": "Add Mark",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"studentId\" : \"1\", \r\n    \"mark\" : 90, \r\n    \"journalId\" : \"1\",\r\n    \"subjectId\" : \"1\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/mark",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"mark"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Mark",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"studentId\" : \"1\", \r\n    \"mark\" : 0, \r\n    \"journalId\" : \"1\",\r\n    \"subjectId\" : \"1\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/mark/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"mark",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteMark",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"studentId\" : \"1\", \r\n    \"mark\" : 0, \r\n    \"journalId\" : \"1\",\r\n    \"subjectId\" : \"1\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/mark/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"mark",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id Mark",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"studentId\" : \"1\", \r\n    \"mark\" : 0, \r\n    \"journalId\" : \"1\",\r\n    \"subjectId\" : \"1\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/mark/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"mark",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Mark",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"studentId\" : \"1\", \r\n    \"mark\" : 0, \r\n    \"journalId\" : \"1\",\r\n    \"subjectId\" : \"1\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9348/api/v1/mark",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9348",
+							"path": [
+								"api",
+								"v1",
+								"mark"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
