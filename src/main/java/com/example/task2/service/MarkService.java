@@ -45,9 +45,9 @@ public class MarkService {
         if (collect.size()==0){
             return new ApiResponse(false, "Gu guruhda siz kiritgan fan o`tilmaydi");
         }
-        if (!student.isActive() && !student.getGuruh().isActive() && !student.getGuruh().getFaculty().isActive()&&
-        !student.getGuruh().getFaculty().getUniversity().isActive() && !student.getGuruh().getFaculty().getUniversity().getAddress().getDistrict().isActive()
-                &&!student.getGuruh().getFaculty().getUniversity().getAddress().getDistrict().getRegion().isActive()){
+        if (!student.isActive() || !student.getGuruh().isActive() || !student.getGuruh().getFaculty().isActive()||
+        !student.getGuruh().getFaculty().getUniversity().isActive() || !student.getGuruh().getFaculty().getUniversity().getAddress().getDistrict().isActive()
+                ||!student.getGuruh().getFaculty().getUniversity().getAddress().getDistrict().getRegion().isActive()){
             return new ApiResponse(false, "Student, group, faculty, university, district yoki region aktiv emas");
         }
 
