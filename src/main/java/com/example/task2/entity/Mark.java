@@ -4,7 +4,7 @@ import com.example.task2.entity.template.AbsIntegerEntity;
 import lombok.*;
 
 import javax.persistence.*;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.NotNull;
 
 
 @Setter
@@ -15,7 +15,6 @@ import javax.validation.constraints.Size;
 @Entity
 @Table(uniqueConstraints = {@UniqueConstraint (columnNames = {"student_id", "subject_id"})})
 public class Mark extends AbsIntegerEntity {
-
 
     @Column(nullable = false)
     private int mark;

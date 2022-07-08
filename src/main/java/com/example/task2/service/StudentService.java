@@ -68,7 +68,7 @@ public class StudentService {
 
     public ApiResponse getByIdStudent(Integer id){
         Student student = studentRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Student mavjud ems"));
-        return new ApiResponse(true, "Student by Id", student);
+        return new ApiResponse(true, "Student by Id", generateStudentDto(student));
     }
 
     public ApiResponse getAllStudentByGroupId (Integer groupId){

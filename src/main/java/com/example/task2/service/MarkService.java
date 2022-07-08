@@ -17,6 +17,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -32,11 +33,21 @@ public class MarkService {
 
     private final JournalRepository journalRepository;
     public ApiResponse addMark(MarkDto markDto){
+        boolean existsByStudentIdAndSubjectId = markRepository.existsByStudentIdAndSubjectId(markDto.getStudentId(), markDto.getSubjectId());
+        if (existsByStudentIdAndSubjectId){
+            return new ApiResponse(false, "Siz kiritgan talaba siz kiritgan fandan baholangan");
+
+        }
         Subject subject = subjectRepository.findById(markDto.getSubjectId()).orElseThrow(() -> new ResourceNotFoundException("Subject topilmadi"));
         Student student = studentRepository.findById(markDto.getStudentId()).orElseThrow(() -> new ResourceNotFoundException("Student topilmadi"));
-        if (!student.isActive() && student.getGuruh().isActive() && student.getGuruh().getFaculty().isActive()&&
-        student.getGuruh().getFaculty().getUniversity().isActive() && student.getGuruh().getFaculty().getUniversity().getAddress().getDistrict().isActive()
-                &&student.getGuruh().getFaculty().getUniversity().getAddress().getDistrict().getRegion().isActive()){
+
+        List<Subject> collect = student.getGuruh().getJournal().getSubjectList().stream().filter(subject1 -> subject.getId().equals(subject1.getId())).collect(Collectors.toList());
+        if (collect.size()==0){
+            return new ApiResponse(false, "Gu guruhda siz kiritgan fan o`tilmaydi");
+        }
+        if (!student.isActive() && !student.getGuruh().isActive() && !student.getGuruh().getFaculty().isActive()&&
+        !student.getGuruh().getFaculty().getUniversity().isActive() && !student.getGuruh().getFaculty().getUniversity().getAddress().getDistrict().isActive()
+                &&!student.getGuruh().getFaculty().getUniversity().getAddress().getDistrict().getRegion().isActive()){
             return new ApiResponse(false, "Student, group, faculty, university, district yoki region aktiv emas");
         }
 
@@ -53,10 +64,17 @@ public class MarkService {
 
     public ApiResponse editMark(Integer id, MarkDto markDto){
         Mark mark = markRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Mark topilmadi"));
+
         Subject subject = subjectRepository.findById(markDto.getSubjectId()).orElseThrow(() -> new ResourceNotFoundException("Subject topilmadi"));
         Student student = studentRepository.findById(markDto.getStudentId()).orElseThrow(() -> new ResourceNotFoundException("Student topilmadi"));
-        if (!student.isActive()){
-            return new ApiResponse(false, "Student aktiv emas");
+        List<Subject> collect = student.getGuruh().getJournal().getSubjectList().stream().filter(subject1 -> subject.getId().equals(subject1.getId())).collect(Collectors.toList());
+        if (collect.size()==0){
+            return new ApiResponse(false, "Gu guruhda siz kiritgan fan o`tilmaydi");
+        }
+        if (!student.isActive() && !student.getGuruh().isActive() && !student.getGuruh().getFaculty().isActive()&&
+                !student.getGuruh().getFaculty().getUniversity().isActive() && !student.getGuruh().getFaculty().getUniversity().getAddress().getDistrict().isActive()
+                &&!student.getGuruh().getFaculty().getUniversity().getAddress().getDistrict().getRegion().isActive()){
+            return new ApiResponse(false, "Student, group, faculty, university, district yoki region aktiv emas");
         }
 
         if (!subject.isActive()){
@@ -105,6 +123,9 @@ public class MarkService {
                 mark.getJournal().getId(), mark.getSubject().getId());
 
     }
+
+
+
 
 
 }

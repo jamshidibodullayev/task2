@@ -19,7 +19,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Set;
-import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Service
@@ -75,7 +74,6 @@ public class JournalService {
             }
         }
         return new ApiResponse(false, "Mavjud emas");
-
     }
 
     public ApiResponse journalAddSubject(Integer id, Integer subjectId){
@@ -110,12 +108,12 @@ public class JournalService {
 
     public ApiResponse getByIdJournal(Integer id){
         Journal journal = journalRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Journal topilmadi"));
-        return new ApiResponse(true, "Journal Get By Id", journal);
+        return new ApiResponse(true, "Journal Get By Id", generateJournalDto(journal));
     }
 
     public ApiResponse getByJournalByGroupId(Integer groupId){
         Journal journal = journalRepository.findByGuruhId(groupId).orElseThrow(() -> new ResourceNotFoundException("Journal topilmadi"));
-        return new ApiResponse(true, "Journal", journal);
+        return new ApiResponse(true, "Journal", generateJournalDto(journal));
     }
 
     public List<Subject> subjectSet(Set<Integer> integerSet){

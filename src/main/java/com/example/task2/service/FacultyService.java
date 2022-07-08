@@ -86,17 +86,15 @@ public class FacultyService {
 
         Faculty faculty = facultyRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Faculty topilmadi"));
         if (faculty.isActive()){
-            return new ApiResponse(true, "Faculty is Activ");
+            return new ApiResponse(true, "Faculty is Activ", generateFacultyDto(faculty));
         }
         return new ApiResponse(false, "Faculty bloklangan");
-
     }
 
     public ApiResponse getAllFacultyByUniversityId(Integer universityId){
         List<Faculty> allByUniversityId = facultyRepository.findAllByUniversityId(universityId);
         List<FacultyDto> facultyDtoList=allByUniversityId.stream().map(this::generateFacultyDto).collect(Collectors.toList());
         return new ApiResponse(true, "All Faculty By University id", facultyDtoList);
-
     }
 
     public ApiResponse getAllFacultyIsActiveTrueByUniversityId(Integer universityId){

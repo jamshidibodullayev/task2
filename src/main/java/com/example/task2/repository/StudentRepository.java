@@ -10,7 +10,7 @@ import java.util.Optional;
 
 public interface StudentRepository extends JpaRepository<Student, Integer> {
 
-    List<Student> findAllByGuruhId(Integer groups_id);
+
 
     Page<Student> findAllByActiveIsTrue(Pageable pageable);
 
@@ -18,5 +18,4 @@ public interface StudentRepository extends JpaRepository<Student, Integer> {
 
     List<Student> findAllByNameContainingIgnoreCase(String text);
 
-    boolean existsByAddressId(Integer address_id);
 }

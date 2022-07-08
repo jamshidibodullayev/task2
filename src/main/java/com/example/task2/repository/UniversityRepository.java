@@ -1,7 +1,6 @@
 package com.example.task2.repository;
 
 import com.example.task2.entity.University;
-import com.example.task2.payload.UniversityDto;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

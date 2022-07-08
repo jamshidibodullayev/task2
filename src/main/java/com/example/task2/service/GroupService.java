@@ -14,8 +14,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.UUID;
-import java.util.concurrent.ThreadPoolExecutor;
 import java.util.stream.Collectors;
 
 @Service
@@ -84,7 +82,7 @@ public class GroupService {
 
     public ApiResponse getByIdGroup(Integer id){
         Guruh group = groupRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Group topilmadi"));
-        return new ApiResponse(true, "Group By Id", group);
+        return new ApiResponse(true, "Group By Id", generateGroupDto(group));
     }
 
     public ApiResponse getAllGroupIsActiveTrue(int page, int size){
@@ -102,7 +100,7 @@ public class GroupService {
 
     public ApiResponse getByIdGroupIsActiveTrue(Integer id){
         Guruh group = groupRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Group topilmadi"));
-        return new ApiResponse(true, "Group By Id", group.isActive()?group:"Group bloklangan");
+        return new ApiResponse(true, "Group By Id", group.isActive()?generateGroupDto(group):"Group bloklangan");
     }
 
     public ApiResponse enabledOrDisabled(Integer id, boolean active) {

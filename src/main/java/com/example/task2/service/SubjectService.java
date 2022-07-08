@@ -4,6 +4,7 @@ package com.example.task2.service;
 import com.example.task2.entity.Subject;
 import com.example.task2.exception.ResourceNotFoundException;
 import com.example.task2.payload.ApiResponse;
+import com.example.task2.payload.SubjectDto;
 import com.example.task2.repository.SubjectRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -12,6 +13,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -64,26 +66,30 @@ public class SubjectService {
     public ApiResponse getAllSubject(int page, int size) {
         Pageable pageable= PageRequest.of(page, size);
         Page<Subject> subjectPage = subjectRepository.findAll(pageable);
-        List<Subject> subjectList=subjectPage.toList();
+        List<SubjectDto> subjectList=subjectPage.stream().map(this::generateSubjectDto).collect(Collectors.toList());
         return new ApiResponse(true, "All subject by page", subjectList);
     }
 
     public ApiResponse getByIdSubject(Integer id) {
         Subject subject = subjectRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Subject topilmadi"));
-        return new ApiResponse(true, "Subject get By Id", subject);
+        return new ApiResponse(true, "Subject get By Id", generateSubjectDto(subject));
     }
 
 
     public ApiResponse getAllSubjectIsActiveTrue(int page, int size) {
         Pageable pageable=PageRequest.of(page, size);
         Page<Subject> subjectPage = subjectRepository.findAllByActiveIsTrue(pageable);
-        List<Subject> subjectList = subjectPage.toList();
+        List<SubjectDto> subjectList = subjectPage.stream().map(this::generateSubjectDto).collect(Collectors.toList());
         return new ApiResponse(true, "Activ Subjectlar", subjectList);
     }
 
 
     public ApiResponse getByIdSubjectIsActiveTrue(Integer id) {
         Subject subject = subjectRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Subject topilmadi"));
-        return new ApiResponse(true, "Subject get By Id", subject.isActive()?subject:"Subject bloklangan");
+        return new ApiResponse(true, "Subject get By Id", subject.isActive()?generateSubjectDto(subject):"Subject bloklangan");
+    }
+
+    private SubjectDto generateSubjectDto(Subject subject){
+        return new SubjectDto(subject.getId(), subject.getName(), subject.getDescription(), subject.isActive());
     }
 }

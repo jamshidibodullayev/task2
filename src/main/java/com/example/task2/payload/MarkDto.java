@@ -1,14 +1,10 @@
 package com.example.task2.payload;
 
-import com.example.task2.entity.Journal;
-import com.example.task2.entity.Student;
-import com.example.task2.entity.Subject;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.ManyToOne;
 import javax.validation.constraints.*;
 
 @Data
@@ -18,9 +14,8 @@ public class MarkDto {
 
     private Integer id;
 
-//    @Max(value = 100, message = "0-100 atrofida bo`lishi kerak")
-//    @Min(value = 0, message = "0-100 atrofida bo`lishi kerak")
-//    @NotNull(message = "Bo`sh bo`lishi mumkin emas")
+    @Min(value = 0)
+    @Max(value = 100)
     private int mark;
 
     @NotNull(message = "Student mavjud emas")

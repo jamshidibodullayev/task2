@@ -2,13 +2,11 @@ package com.example.task2.entity;
 
 import com.example.task2.entity.template.AbsIntegerEntity;
 import lombok.*;
-import org.hibernate.Hibernate;
 import org.hibernate.annotations.SQLDelete;
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.Where;
 
 import javax.persistence.*;
-import java.util.Objects;
 
 @Getter
 @Setter
