@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "096c63e7-3577-4383-97d0-998f3dd13d8c",
 		"name": "New Collection",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "18747942"
 	},
 	"item": [
@@ -23,19 +23,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/address",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"address"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/address"
 					},
 					"response": []
 				},
@@ -53,20 +41,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/address/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"address",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/address/1"
 					},
 					"response": []
 				},
@@ -75,20 +50,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/address/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"address",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/address/1"
 					},
 					"response": []
 				},
@@ -97,20 +59,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/address/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"address",
-								"2"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/address/2"
 					},
 					"response": []
 				},
@@ -119,20 +68,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/address/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"address",
-								"2"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/address/2"
 					},
 					"response": []
 				},
@@ -182,19 +118,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/university",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"university"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/university"
 					},
 					"response": []
 				},
@@ -212,20 +136,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/university/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"university",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/university/1"
 					},
 					"response": []
 				},
@@ -280,20 +191,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/university/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"university",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/university/1"
 					},
 					"response": []
 				},
@@ -346,20 +244,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/university/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"university",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/university/1"
 					},
 					"response": []
 				},
@@ -380,21 +265,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/university/getAllUniversityIsActive/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"university",
-								"getAllUniversityIsActive",
-								""
-							]
-						}
+						"url": "http://localhost:9348/api/v1/university/getAllUniversityIsActive/"
 					},
 					"response": []
 				},
@@ -415,21 +286,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/university/getByIdUniversityIsActive/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"university",
-								"getByIdUniversityIsActive",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/university/getByIdUniversityIsActive/1"
 					},
 					"response": []
 				},
@@ -450,21 +307,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/university/getAllUniversityByRegionId/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"university",
-								"getAllUniversityByRegionId",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/university/getAllUniversityByRegionId/1"
 					},
 					"response": []
 				},
@@ -485,21 +328,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/university/getAllUniversityByDistrictId/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"university",
-								"getAllUniversityByDistrictId",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/university/getAllUniversityByDistrictId/1"
 					},
 					"response": []
 				}
@@ -522,19 +351,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/region",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"region"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/region"
 					},
 					"response": []
 				},
@@ -552,20 +369,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/region/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"region",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/region/1"
 					},
 					"response": []
 				},
@@ -574,20 +378,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/region/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"region",
-								"2"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/region/2"
 					},
 					"response": []
 				},
@@ -655,20 +446,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/region/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"region",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/region/1"
 					},
 					"response": []
 				},
@@ -709,21 +487,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/region/isActive/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"region",
-								"isActive",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/region/isActive/1"
 					},
 					"response": []
 				}
@@ -746,19 +510,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/district",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"district"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/district"
 					},
 					"response": []
 				},
@@ -776,20 +528,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/district/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"district",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/district/1"
 					},
 					"response": []
 				},
@@ -807,20 +546,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/district/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"district",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/district/1"
 					},
 					"response": []
 				},
@@ -888,20 +614,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/district/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"district",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/district/1"
 					},
 					"response": []
 				},
@@ -942,21 +655,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/district/getByIdDistrictIsActive/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"district",
-								"getByIdDistrictIsActive",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/district/getByIdDistrictIsActive/1"
 					},
 					"response": []
 				},
@@ -965,21 +664,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/district/getAllDistrictByRegionId/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"district",
-								"getAllDistrictByRegionId",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/district/getAllDistrictByRegionId/1"
 					},
 					"response": []
 				},
@@ -988,21 +673,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/district/getAllDistrictByRegionIdIsActive/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"district",
-								"getAllDistrictByRegionIdIsActive",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/district/getAllDistrictByRegionIdIsActive/1"
 					},
 					"response": []
 				}
@@ -1047,20 +718,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/faculty/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"faculty",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/faculty/1"
 					},
 					"response": []
 				},
@@ -1069,21 +727,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/faculty/getAllFacultyByUniversityId/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"faculty",
-								"getAllFacultyByUniversityId",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/faculty/getAllFacultyByUniversityId/1"
 					},
 					"response": []
 				},
@@ -1092,21 +736,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/faculty/getAllFacultyIsActiveTrueByUniversityId/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"faculty",
-								"getAllFacultyIsActiveTrueByUniversityId",
-								"2"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/faculty/getAllFacultyIsActiveTrueByUniversityId/2"
 					},
 					"response": []
 				},
@@ -1115,20 +745,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/faculty/getAllFacultyIsActiveTrue",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"faculty",
-								"getAllFacultyIsActiveTrue"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/faculty/getAllFacultyIsActiveTrue"
 					},
 					"response": []
 				},
@@ -1137,21 +754,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/faculty/getByIdFacultyIsActiveTrue/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"faculty",
-								"getByIdFacultyIsActiveTrue",
-								"2"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/faculty/getByIdFacultyIsActiveTrue/1"
 					},
 					"response": []
 				},
@@ -1160,20 +763,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/faculty/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"faculty",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/faculty/1"
 					},
 					"response": []
 				},
@@ -1191,19 +781,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/faculty",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"faculty"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/faculty"
 					},
 					"response": []
 				},
@@ -1221,20 +799,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/faculty/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"faculty",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/faculty/1"
 					},
 					"response": []
 				},
@@ -1277,7 +842,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9348/api/v1/group",
+							"raw": "http://localhost:9348/api/v1/group?page=0&size=20",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1287,6 +852,16 @@
 								"api",
 								"v1",
 								"group"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "20"
+								}
 							]
 						}
 					},
@@ -1297,20 +872,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/group/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"group",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/group/1"
 					},
 					"response": []
 				},
@@ -1319,21 +881,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/group/getByIdGroupIsActiveTrue/4",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"group",
-								"getByIdGroupIsActiveTrue",
-								"4"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/group/getByIdGroupIsActiveTrue/4"
 					},
 					"response": []
 				},
@@ -1342,21 +890,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/group/getAllGroupByFacultyId/5",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"group",
-								"getAllGroupByFacultyId",
-								"5"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/group/getAllGroupByFacultyId/5"
 					},
 					"response": []
 				},
@@ -1365,20 +899,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/group/getAllGroupIsActiveTrue",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"group",
-								"getAllGroupIsActiveTrue"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/group/getAllGroupIsActiveTrue"
 					},
 					"response": []
 				},
@@ -1396,19 +917,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/group",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"group"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/group"
 					},
 					"response": []
 				},
@@ -1426,20 +935,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/group/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"group",
-								"2"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/group/2"
 					},
 					"response": []
 				},
@@ -1457,20 +953,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/group/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"group",
-								"2"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/group/2"
 					},
 					"response": []
 				},
@@ -1521,19 +1004,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/student",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"student"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/student"
 					},
 					"response": []
 				},
@@ -1542,20 +1013,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/student/6",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"student",
-								"6"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/student/6"
 					},
 					"response": []
 				},
@@ -1564,21 +1022,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/student/getAllStudentByGroupId/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"student",
-								"getAllStudentByGroupId",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/student/getAllStudentByGroupId/1"
 					},
 					"response": []
 				},
@@ -1587,21 +1031,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/student/getByIdStudentIsActiveTrue/10",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"student",
-								"getByIdStudentIsActiveTrue",
-								"10"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/student/getByIdStudentIsActiveTrue/10"
 					},
 					"response": []
 				},
@@ -1610,20 +1040,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/student/getAllStudentIsActiveTrue",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"student",
-								"getAllStudentIsActiveTrue"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/student/getAllStudentIsActiveTrue"
 					},
 					"response": []
 				},
@@ -1632,20 +1049,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/student/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"student",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/student/1"
 					},
 					"response": []
 				},
@@ -1691,19 +1095,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/student",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"student"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/student"
 					},
 					"response": []
 				},
@@ -1721,20 +1113,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/student/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"student",
-								"2"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/student/2"
 					},
 					"response": []
 				}
@@ -1748,21 +1127,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/addition/StudentSubject/5",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"addition",
-								"StudentSubject",
-								"5"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/addition/StudentSubject/5"
 					},
 					"response": []
 				},
@@ -1771,21 +1136,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/addition/getGroupsAndSumAmountStudent/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"addition",
-								"getGroupsAndSumAmountStudent",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/addition/getGroupsAndSumAmountStudent/1"
 					},
 					"response": []
 				},
@@ -1850,21 +1201,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/addition/getStudentNameAverageMark2/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"addition",
-								"getStudentNameAverageMark2",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/addition/getStudentNameAverageMark2/1"
 					},
 					"response": []
 				}
@@ -1887,19 +1224,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/subject",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"subject"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/subject"
 					},
 					"response": []
 				},
@@ -1917,20 +1242,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/subject/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"subject",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/subject/1"
 					},
 					"response": []
 				},
@@ -1948,20 +1260,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/subject/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"subject",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/subject/1"
 					},
 					"response": []
 				},
@@ -1998,19 +1297,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/subject",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"subject"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/subject"
 					},
 					"response": []
 				},
@@ -2019,20 +1306,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/subject/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"subject",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/subject/1"
 					},
 					"response": []
 				},
@@ -2041,20 +1315,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/subject/getAllSubjectIsActiveTrue",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"subject",
-								"getAllSubjectIsActiveTrue"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/subject/getAllSubjectIsActiveTrue"
 					},
 					"response": []
 				},
@@ -2063,21 +1324,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/subject/getByIdSubjectIsActiveTrue/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"subject",
-								"getByIdSubjectIsActiveTrue",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/subject/getByIdSubjectIsActiveTrue/1"
 					},
 					"response": []
 				}
@@ -2091,19 +1338,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/journal",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"journal"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/journal"
 					},
 					"response": []
 				},
@@ -2112,20 +1347,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/journal/5",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"journal",
-								"5"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/journal/5"
 					},
 					"response": []
 				},
@@ -2134,21 +1356,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/journal/getByJournalByGroupId/8",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"journal",
-								"getByJournalByGroupId",
-								"8"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/journal/getByJournalByGroupId/8"
 					},
 					"response": []
 				},
@@ -2166,20 +1374,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/journal/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"journal",
-								""
-							]
-						}
+						"url": "http://localhost:9348/api/v1/journal/"
 					},
 					"response": []
 				},
@@ -2197,20 +1392,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/journal/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"journal",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/journal/1"
 					},
 					"response": []
 				},
@@ -2221,7 +1403,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\" : \"B5 guruh\", \r\n    \"groupId\" : 1, \r\n    \"subjectList\" : [1,25] \r\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2257,17 +1439,8 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\" : \"B5 guruh\", \r\n    \"groupId\" : 1, \r\n    \"subjectList\" : [1,25] \r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
-							"raw": "http://localhost:9348/api/v1/journal/journalDeleteSubject/1?subjectId=1",
+							"raw": "http://localhost:9348/api/v1/journal/journalDeleteSubject/1?subjectId=1&subjectId=1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -2284,6 +1457,10 @@
 								{
 									"key": "subjectId",
 									"value": "1"
+								},
+								{
+									"key": "subjectId",
+									"value": "1"
 								}
 							]
 						}
@@ -2295,20 +1472,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:9348/api/v1/journal/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"journal",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/journal/1"
 					},
 					"response": []
 				}
@@ -2324,26 +1488,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"studentId\" : \"1\", \r\n    \"mark\" : 90, \r\n    \"journalId\" : \"1\",\r\n    \"subjectId\" : \"1\"\r\n   \r\n}",
+							"raw": "{\r\n    \"studentId\" : \"1\", \r\n    \"mark\" : 190, \r\n    \"journalId\" : \"1\",\r\n    \"subjectId\" : \"1\"\r\n   \r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/mark",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"mark"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/mark"
 					},
 					"response": []
 				},
@@ -2361,20 +1513,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/mark/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"mark",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/mark/1"
 					},
 					"response": []
 				},
@@ -2392,20 +1531,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/mark/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"mark",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/mark/1"
 					},
 					"response": []
 				},
@@ -2426,20 +1552,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/mark/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"mark",
-								"1"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/mark/1"
 					},
 					"response": []
 				},
@@ -2460,19 +1573,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:9348/api/v1/mark",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9348",
-							"path": [
-								"api",
-								"v1",
-								"mark"
-							]
-						}
+						"url": "http://localhost:9348/api/v1/mark"
 					},
 					"response": []
 				}
